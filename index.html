@@ -1,1 +1,41 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="AlonWo website in github">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+    </head>
+    <body>
+        <div class="backgrounds overlay">
+			<div class="background" data-aos="fade-in" data-aos-duration="1500" data-aos-anchor=".section--hero" style="background-image: url('bg.jpg');"></div>
+        </div>
+        
+		<header class="hero">
+			<div class="hero-center">
+				<h1 class="hero__logo" data-aos="zoom-in">Alon</h1>
+				<h2 class="hero__text" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">My Website</h2>
+			</div>
+			<span class="hero__scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+				Scroll down <br>
+				<i class="chevron bottom"></i>
+			</span>
+			<a href="http://github.com/michalsnik/aos" target="_blank" class="octocat" data-aos="zoom-out" data-aos-delay="1500">
+				<img src="img/github_octocat.png" alt="">
+			</a>
+		</header>
+        <div class="item" data-aos="fade-in" data-aos-duration="5000" data-aos-delay="50" data-aos-offset="200">
+            <h1>My First Header</h1>
+        </div>
+        <div class="item" data-aos="flip-up">8</div>
+<div class="item" data-aos="flip-down">9</div>
+<div class="item" data-aos="flip-right">10</div>
+<div class="item" data-aos="flip-left">11</div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>
