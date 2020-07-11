@@ -11,7 +11,7 @@
     margin: 50px auto;
     padding-top: 55px;
     /* background: rgb(59, 100, 177); */
-   
+    font-family: 'Shadows Into Light', cursive;
     text-align: center;
     color: #FFF;
     font-size: 2em;
@@ -54,37 +54,16 @@
   background-color: #464646;
   }
 
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url(bg-mobile.jpg);
+    }
+	}
 
-
-  /**
- * Backgrounds
  
-.backgrounds {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    z-index: -1; }
-    .backgrounds .background {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-attachment: fixed; }
-  
-  .overlay:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background: #e98e44;
-    opacity: 0.8; }
-  */
     /**
  * Hero
  */
@@ -192,3 +171,41 @@
     -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
             transform: rotate(-135deg);
+  }
+@media print {
+
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    background-image: none;
+  }
+  .hero {
+    overflow: auto;
+    position: fixed;
+    text-align: left;
+    margin-left: 10%;
+    
+  }
+  .hero-center {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    color: rgba(0, 0, 0, 1);
+    opacity: 1;
+    
+ }
+ .hero__scroll {
+   display: none;
+ }
+ .item {
+
+   color: black;
+   height: 150px;
+   margin: 20px auto;
+   padding-top: 20px;
+ }
+
+
+ }
